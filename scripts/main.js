@@ -4,4 +4,8 @@
  * 
  *********************************************************************************/
 
-lancerJeu()
+//lancerJeu()
+let zoneSaisie = document.getElementById("inputEcriture")
+//console.log(zoneSaisie)
+let btnValiderMot = document.getElementById("btnValiderMot")
+console.log(btnValiderMot)
