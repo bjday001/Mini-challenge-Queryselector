@@ -5,7 +5,12 @@
  *********************************************************************************/
 
 //lancerJeu()
-let zoneSaisie = document.getElementById("inputEcriture")
+//let zoneSaisie = document.getElementById("inputEcriture")
 //console.log(zoneSaisie)
-let btnValiderMot = document.getElementById("btnValiderMot")
-console.log(btnValiderMot)
+//let btnValiderMot = document.getElementById("btnValiderMot")
+//console.log(btnValiderMot)
+
+let zoneProposition = document.querySelector(".zoneProposition")
+
+let zoneScore = document.querySelector(".zoneScore span")
+console.log(zoneScore)
