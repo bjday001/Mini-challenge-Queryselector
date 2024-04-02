@@ -19,3 +19,9 @@
 
 // Où sera affichée le score
 //let zoneScore = document.querySelector(".zoneScore span")
+
+// Les choix à selectionner
+let zoneOptionsInput = document.querySelectorAll(".zoneOptions input")
+for (let i = 0; i < zoneOptionsInput.length; i++) {
+    console.log(zoneOptionsInput[i]);
+}
