@@ -5,12 +5,17 @@
  *********************************************************************************/
 
 //lancerJeu()
+
+//Où sera saisie le mot ou la phrase
 //let zoneSaisie = document.getElementById("inputEcriture")
 //console.log(zoneSaisie)
+
+// Où sera validé le mot ou la phrase
 //let btnValiderMot = document.getElementById("btnValiderMot")
 //console.log(btnValiderMot)
 
-let zoneProposition = document.querySelector(".zoneProposition")
+//Où sera affiché le mot ou la phrase proposée
+//let zoneProposition = document.querySelector(".zoneProposition")
 
-let zoneScore = document.querySelector(".zoneScore span")
-console.log(zoneScore)
+// Où sera affichée le score
+//let zoneScore = document.querySelector(".zoneScore span")
