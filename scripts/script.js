@@ -74,3 +74,8 @@ function lancerJeu() {
 
     afficherResultat(score, nbMotsProposes)
 }
+
+let monBouton = document.getElementById("btnValiderMot");
+monBouton.addEventListener("click", function () {
+    console.log("Vous avez cliqué sur le bouton")
+});
