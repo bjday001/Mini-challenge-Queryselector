@@ -76,6 +76,12 @@ function lancerJeu() {
 }
 
 let monBouton = document.getElementById("btnValiderMot");
+/**
 monBouton.addEventListener("click", function () {
+    console.log("Vous avez cliqué sur le bouton")
+}); */
+
+// Ceci est exactement pareil que le code ci-dessus, "function()" est pareil que "() =>"
+monBouton.addEventListener("click",  () => {
     console.log("Vous avez cliqué sur le bouton")
 });
