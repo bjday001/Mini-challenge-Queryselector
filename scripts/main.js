@@ -4,24 +4,21 @@
  * 
  *********************************************************************************/
 
-//lancerJeu()
+lancerJeu()
 
-//Où sera saisie le mot ou la phrase
-//let zoneSaisie = document.getElementById("inputEcriture")
-//console.log(zoneSaisie)
+// J'ai mis ce code en commentaire, nous pourrons le récupérer lorsque nous en auront besoin :
 
-// Où sera validé le mot ou la phrase
-//let btnValiderMot = document.getElementById("btnValiderMot")
-//console.log(btnValiderMot)
+// let inputEcriture = document.getElementById("inputEcriture")
+// console.log(inputEcriture)
 
-//Où sera affiché le mot ou la phrase proposée
-//let zoneProposition = document.querySelector(".zoneProposition")
+// let btnValiderMot = document.getElementById("btnValiderMot")
+// console.log(btnValiderMot)
 
-// Où sera affichée le score
-//let zoneScore = document.querySelector(".zoneScore span")
+// let zoneProposition = document.querySelector(".zoneProposition")
+// console.log(zoneProposition)
 
-// Les choix à selectionner
-let zoneOptionsInput = document.querySelectorAll(".zoneOptions input")
-for (let i = 0; i < zoneOptionsInput.length; i++) {
-    console.log(zoneOptionsInput[i]);
-}
+// let spanScore = document.querySelector(".zoneScore span")
+// console.log(spanScore)
+
+// let listeBtnRadio = document.querySelectorAll(".optionSource input")
+// console.log(listeBtnRadio)
