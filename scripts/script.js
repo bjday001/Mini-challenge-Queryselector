@@ -31,6 +31,15 @@ function lancerJeu() {
     // Initialisations
     let score = 0
     let nbMotsProposes = 0
-
+    
     afficherResultat(score, nbMotsProposes)
 }
+let btnValiderMot = document.getElementById("btnValiderMot")
+    btnValiderMot.addEventListener("click", () => {
+        let inputEcriture = document.getElementById("inputEcriture") 
+
+        console.log(inputEcriture.value)
+
+        
+    });
+
