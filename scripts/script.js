@@ -10,7 +10,7 @@
  * @param {number} nbMotsProposes : le nombre de mots proposés à l'utilisateur
  */
 function afficherResultat(score, nbMotsProposes) {
-    let zoneScore = document.querySelector(".zoneScore span")
+    let zoneScore = document.querySelector(".zoneScore ")
     let div = `
     <div>
         <p>"Votre score est de   ${score}  sur  ${nbMotsProposes} "</p>
@@ -27,19 +27,43 @@ function afficherResultat(score, nbMotsProposes) {
  * Cette fonction lance le jeu. 
  * Elle demande à l'utilisateur de choisir entre "mots" et "phrases" et lance la boucle de jeu correspondante
  */
+function afficherProposition(proposition) {
+    let zoneProposition = document.querySelector(".zoneProposition")
+    let messageGameOver = `
+        <p> La partie est terminée !</p>
+    `;
+
+    zoneProposition.innerText = proposition
+    if (proposition===undefined) { 
+         zoneProposition.innerHTML = messageGameOver
+         btnValiderMot.disabled=true
+    }
+}
 function lancerJeu() {
     // Initialisations
     let score = 0
     let nbMotsProposes = 0
-    
-    afficherResultat(score, nbMotsProposes)
-}
+    let i = 0
+
 let btnValiderMot = document.getElementById("btnValiderMot")
+let inputEcriture = document.getElementById("inputEcriture") 
+
+afficherProposition(listeMots[i])
+
     btnValiderMot.addEventListener("click", () => {
-        let inputEcriture = document.getElementById("inputEcriture") 
+ i++
+ inputEcriture.value=""
 
-        console.log(inputEcriture.value)
+       afficherProposition(listeMots[i])
 
-        
+     
+       
+
+    afficherResultat(score, nbMotsProposes)
+
+        //console.log(inputEcriture.value)
+       
+ 
     });
 
+}
