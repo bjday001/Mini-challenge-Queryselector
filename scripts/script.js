@@ -51,19 +51,23 @@ let inputEcriture = document.getElementById("inputEcriture")
 afficherProposition(listeMots[i])
 
     btnValiderMot.addEventListener("click", () => {
- i++
- inputEcriture.value=""
+if (inputEcriture.value===listeMots[i]) {
+    i++
+    inputEcriture.value=""
+    score++
+    nbMotsProposes++
+}
+ else {
+    i++
+    inputEcriture.value=""
+    nbMotsProposes++
+}
 
-       afficherProposition(listeMots[i])
-
-     
-       
+    afficherProposition(listeMots[i])
 
     afficherResultat(score, nbMotsProposes)
 
-        //console.log(inputEcriture.value)
-       
- 
+   
     });
 
 }
