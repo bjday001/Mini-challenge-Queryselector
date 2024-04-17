@@ -44,30 +44,51 @@ function lancerJeu() {
     let score = 0
     let nbMotsProposes = 0
     let i = 0
+    let index = 0
+    let listeProposition = listeMots
+
 
 let btnValiderMot = document.getElementById("btnValiderMot")
-let inputEcriture = document.getElementById("inputEcriture") 
+let inputEcriture = document.getElementById("inputEcriture")
+    afficherProposition(listeProposition[i])
+console.log(listeProposition[i])
+btnValiderMot.addEventListener("click", () => {
 
-afficherProposition(listeMots[i])
+    if (inputEcriture.value===listeProposition[i]) {    
+        score++
+      i++
+      afficherProposition(listeProposition[i])
+    }  
+       else { afficherProposition(listeProposition[i])
+        i++
+       }
+        nbMotsProposes++
 
-    btnValiderMot.addEventListener("click", () => {
-if (inputEcriture.value===listeMots[i]) {
-    i++
-    inputEcriture.value=""
-    score++
-    nbMotsProposes++
-}
- else {
-    i++
-    inputEcriture.value=""
-    nbMotsProposes++
-}
-
-    afficherProposition(listeMots[i])
+     inputEcriture.value="" 
 
     afficherResultat(score, nbMotsProposes)
 
-   
-    });
+    
+
+       }
+    )
+
+let baliseInput = document.querySelectorAll('input[type=radio]')
+for (let index = 0; index < baliseInput.length; index++) {
+    baliseInput[index].addEventListener("change", (event) => {
+       // console.log(event.target.id)
+       if (event.target.value === "1") {
+listeProposition = listeMots    
+    }
+else {
+        listeProposition = listePhrases
+    }
+    afficherProposition(listeProposition[i])
+
+ });
+
+}    afficherResultat(score, nbMotsProposes)
+
 
 }
+
